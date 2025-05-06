@@ -1,0 +1,20 @@
+[
+  {
+    "id": "python_level1",
+    "title": "Python Developer (Level 1)",
+    "language": "python",
+    "animationRes": "ic_python"
+  },
+  {
+    "id": "htmlcssjs_level1",
+    "title": "Front-End Developer (Level 1)",
+    "language": "htmlcssjs",
+    "animationRes": "ic_frontend"
+  },
+  {
+    "id": "css_level1",
+    "title": "CSS Developer (Level 1)",
+    "language": "css",
+    "animationRes": "ic_frontend"
+  }
+]
