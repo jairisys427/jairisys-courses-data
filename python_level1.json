@@ -1,70 +1,202 @@
 {
   "level": 1,
-  "language": "Python",
+  "language": "python",
   "modules": [
     {
       "id": 1,
-      "title": "Python Basics",
+      "title": "Python Introduction",
       "lessons": [
         {
           "id": 1,
           "type": "info",
           "title": "What is Python?",
-          "content": "Python is a high-level, interpreted programming language known for its simplicity, readability, and versatility.\nDeveloped by Guido van Rossum and released in 1991, Python is widely used in:\n- Web development\n- Data science and machine learning\n- Software development\n- Cybersecurity\n- Game development"
+          "content": "Python is a powerful, high-level, interpreted programming language known for its readability and simplicity. It was created by Guido van Rossum and released in 1991. Python is open-source and works on multiple platforms, including Windows, macOS, Linux, and more. It supports multiple programming paradigms, such as object-oriented, procedural, and functional programming."
         },
         {
           "id": 2,
           "type": "info",
-          "title": "Important Features of Python",
-          "content": "Python has several key features that make it popular:\n- Easy to learn and write: Clear syntax\n- Interpreted: Executes code line by line, no compilation needed\n- Dynamic typing: No need to declare variable types\n- Cross-platform: Runs on Windows, macOS, Linux\n- Large standard library: Extensive built-in modules\n- Supportive community: Active forums and resources"
+          "title": "Why Learn Python?",
+          "content": "Python is versatile and used in web development, data science, automation, AI, and more. It has a simple syntax similar to English, making it great for beginners. Python has a massive community and countless libraries, so help and tools are always available. It’s one of the most in-demand programming languages in the world. Whether you're building websites, analyzing data, automating tasks, scripting, working with IoT, or developing games and apps—Python can help you do it all!"
         },
         {
           "id": 3,
           "type": "quiz",
-          "question": "Who created the Python programming language?",
-          "options": ["Tim Berners-Lee", "James Gosling", "Guido van Rossum", "Dennis Ritchie"],
-          "correct": "Guido van Rossum"
+          "question": "What type of language is Python?",
+          "options": ["Low-level", "High-level", "Machine code"],
+          "correct": "High-level"
         },
         {
           "id": 4,
+          "type": "codeChallenge",
+          "question": "Print 'Hello, World!' in Python.",
+          "blocks": ["print(", "'Hello, World!'", ")"],
+          "expectedAnswer": "Hello, World!"
+        },
+        {
+          "id": 5,
+          "type": "info",
+          "title": "Python Syntax",
+          "content": "Python uses indentation (spaces or tabs) to define code blocks instead of curly braces, making code cleaner and easier to read. Statements end simply by going to a new line—no semicolons required! This simplicity in structure allows beginners to focus more on logic and less on punctuation rules."
+        },
+        {
+          "id": 6,
           "type": "quiz",
-          "question": "What is a key feature of Python that allows variables to be assigned without declaring their type?",
-          "options": ["Interpreted execution", "Dynamic typing", "Cross-platform support", "Large standard library"],
-          "correct": "Dynamic typing"
+          "question": "What symbol is used for comments in Python?",
+          "options": ["#", "//", "<!-- -->"],
+          "correct": "#"
+        },
+        {
+          "id": 7,
+          "type": "info",
+          "title": "Great Job! 🎉",
+          "content": "You've successfully completed this module—way to go! 💪 Every small step you take is building a strong foundation. You're not just learning Python; you're developing problem-solving skills that will open doors in tech, science, and beyond. Keep up the momentum, and let's dive into the next exciting part of your journey! 🚀"
+        },
+        {
+          "id": 8,
+          "type": "quiz",
+          "question": "Who created Python?",
+          "options": ["Guido van Rossum", "James Gosling", "Dennis Ritchie"],
+          "correct": "Guido van Rossum"
+        },
+        {
+          "id": 9,
+          "type": "codeChallenge",
+          "question": "Use Python to print your name.",
+          "blocks": ["print(", "'Your Name'", ")"],
+          "expectedAnswer": "Your Name"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Variables and Data Types",
+      "lessons": [
+        {
+          "id": 1,
+          "type": "info",
+          "title": "Variables",
+          "content": "Variables are containers for storing data values. In Python, you don't need to declare the data type—just assign a value and Python figures it out. For example, writing name = 'Alex' creates a variable called name holding a string value. Variables make your programs dynamic and reusable."
+        },
+        {
+          "id": 2,
+          "type": "info",
+          "title": "Data Types",
+          "content": "Python has several built-in data types that are used to classify values. Common ones include:\n- int: for whole numbers\n- float: for decimal numbers\n- str: for text\n- bool: for True/False values\nKnowing the data type is important because it affects how data can be used or manipulated in a program."
+        },
+        {
+          "id": 3,
+          "type": "quiz",
+          "question": "Which of the following is a valid variable name?",
+          "options": ["2name", "_name", "my-name"],
+          "correct": "_name"
+        },
+        {
+          "id": 4,
+          "type": "codeChallenge",
+          "title": "Variable",
+          "question": "Create a variable named 'age' and set it to 25.",
+          "blocks": ["age", "=", "25"],
+          "expectedAnswer": "age = 25"
         },
         {
           "id": 5,
           "type": "quiz",
-          "question": "How is Python code executed?",
-          "options": ["Line by line", "Whole program at once", "Both line by line and whole program", "After compilation"],
-          "correct": "Line by line"
+          "question": "Which data type is used for True/False values?",
+          "options": ["int", "str", "bool"],
+          "correct": "bool"
         },
         {
           "id": 6,
-          "type": "codeChallenge",
-          "title": "Write a Python program to print a greeting.",
-          "question": "Write code to print 'Hello, Python!' to the console.",
-          "expectedAnswer": "print('Hello, Python!')",
-          "blocks": ["print", "(", "'Hello, Python!'", ")", "'Hello'"],
-          "language": "python"
+          "type": "info",
+          "title": "Great Job! 🎉",
+          "content": "Awesome work completing this module! 🎯 You've mastered how to use variables and understand different data types—an essential step in becoming a Python pro. These are the tools that will help you store, organize, and manage data as your programs grow more complex. Let’s keep pushing forward! 🚀"
         },
         {
           "id": 7,
-          "type": "code_fill_in_the_blank",
-          "instruction": "Complete the code to print a message.",
-          "starterCode": "____('Welcome to Python!')\n",
-          "placeholders": [
-            {"line": 1, "index": 0, "hint": "Function to output text"}
-          ],
-          "blocks": ["print", "input", "len", "type"],
-          "correctAnswers": ["print"],
-          "language": "python"
+          "type": "quiz",
+          "question": "What is the data type of 3.14 in Python?",
+          "options": ["int", "float", "str"],
+          "correct": "float"
         },
         {
           "id": 8,
+          "type": "codeChallenge",
+          "title": "Multiple Variables",
+          "question": "Assign 10 to x and 20 to y.",
+          "blocks": ["x", "=", "10", "y", "=", "20"],
+          "expectedAnswer": "x = 10\ny = 20"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Control Flow",
+      "lessons": [
+        {
+          "id": 1,
+          "type": "info",
+          "title": "if Statements",
+          "content": "Decision-making is a key part of any program. Python uses if, elif, and else to run different code based on conditions. For example:\npython\nif age >= 18:\n    print(\"You can vote!\")\nelse:\n    print(\"You’re too young to vote.\")\n\nThis allows your programs to react to different inputs and scenarios."
+        },
+        {
+          "id": 2,
+          "type": "info",
+          "title": "Loops",
+          "content": "Loops are used to repeat actions. Python has two main types:\n- for loops: used when you know how many times to repeat\n- while loops: used when you repeat until a condition is no longer true\nLoops help automate repetitive tasks and make your code more efficient."
+        },
+        {
+          "id": 3,
+          "type": "quiz",
+          "question": "Which keyword is used for a loop that repeats a known number of times?",
+          "options": ["for", "while", "repeat"],
+          "correct": "for"
+        },
+        {
+          "id": 4,
+          "type": "codeChallenge",
+          "question": "Write a loop that prints numbers 0 to 4.",
+          "blocks": ["for i in range(5):", "    print(i)"],
+          "expectedAnswer": "for i in range(5):\n    print(i)"
+        },
+        {
+          "id": 5,
+          "type": "code_fill_in_the_blank",
+          "instruction": "Fill in the blanks to print each item on a new line using the print() function.",
+          "starterCode": "# Print the items on separate lines\nprint(\"Apples\")\n(\"Bananas\")\n(\"Cherries\")",
+          "placeholders": [
+            {"line": 3, "index": 0, "hint": "print"},
+            {"line": 4, "index": 0, "hint": "print"}
+          ],
+          "blocks": ["print", "len", "input", "print"],
+          "correctAnswers": ["print", "print"],
+          "language": "python"
+        },
+        {
+          "id": 6,
+          "type": "quiz",
+          "question": "What does elif stand for?",
+          "options": ["else if", "else then", "end if"],
+          "correct": "else if"
+        },
+        {
+          "id": 7,
           "type": "info",
           "title": "Great Job! 🎉",
-          "content": "You've successfully completed this module—way to go! 💪 Every step you take brings you closer to mastering Python. Now, it’s time to take on a new challenge and continue your journey of growth and discovery. Let’s move ahead to the next exciting learning path! 🚀"
+          "content": "You’ve just unlocked the logic behind decision-making and repetition—amazing progress! 🧠 With if statements and loops, your programs can now think and act on their own. Keep building, keep experimenting, and most importantly—keep having fun with code! Next stop: more power, more logic, more Python! 💥"
+        },
+        {
+          "id": 8,
+          "type": "quiz",
+          "question": "What keyword ends an if-elif chain when none of the conditions match?",
+          "options": ["break", "finally", "else"],
+          "correct": "else"
+        },
+        {
+          "id": 9,
+          "type": "codeChallenge",
+          "question": "Write a loop that prints 'Python' 3 times.",
+          "blocks": ["for i in range(3):", "    print('Python')"],
+          "expectedAnswer": "Python\nPython\nPython"
         }
       ]
     }
