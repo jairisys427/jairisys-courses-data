@@ -1,160 +1,70 @@
 {
   "level": 1,
-  "language": "python",
+  "language": "Python",
   "modules": [
     {
       "id": 1,
-      "title": "Python Introduction",
+      "title": "Python Basics",
       "lessons": [
         {
           "id": 1,
           "type": "info",
           "title": "What is Python?",
-          "content": "Python is a high-level, interpreted programming language known for its readability and simplicity."
+          "content": "Python is a high-level, interpreted programming language known for its simplicity, readability, and versatility.\nDeveloped by Guido van Rossum and released in 1991, Python is widely used in:\n- Web development\n- Data science and machine learning\n- Software development\n- Cybersecurity\n- Game development"
         },
         {
           "id": 2,
           "type": "info",
-          "title": "Why Learn Python?",
-          "content": "Python is versatile and used in web development, data science, automation, AI, and more."
+          "title": "Important Features of Python",
+          "content": "Python has several key features that make it popular:\n- Easy to learn and write: Clear syntax\n- Interpreted: Executes code line by line, no compilation needed\n- Dynamic typing: No need to declare variable types\n- Cross-platform: Runs on Windows, macOS, Linux\n- Large standard library: Extensive built-in modules\n- Supportive community: Active forums and resources"
         },
         {
           "id": 3,
           "type": "quiz",
-          "question": "What type of language is Python?",
-          "options": ["Low-level", "High-level", "Machine code"],
-          "correct": "High-level"
+          "question": "Who created the Python programming language?",
+          "options": ["Tim Berners-Lee", "James Gosling", "Guido van Rossum", "Dennis Ritchie"],
+          "correct": "Guido van Rossum"
         },
         {
           "id": 4,
-          "type": "codeChallenge",
-          "question": "Print 'Hello, World!' in Python.",
-          "blocks": ["print(", "'Hello, World!'", ")"],
-          "expectedAnswer": "Hello, World!"
+          "type": "quiz",
+          "question": "What is a key feature of Python that allows variables to be assigned without declaring their type?",
+          "options": ["Interpreted execution", "Dynamic typing", "Cross-platform support", "Large standard library"],
+          "correct": "Dynamic typing"
         },
         {
           "id": 5,
-          "type": "info",
-          "title": "Python Syntax",
-          "content": "Python uses indentation to define code blocks instead of curly braces."
+          "type": "quiz",
+          "question": "How is Python code executed?",
+          "options": ["Line by line", "Whole program at once", "Both line by line and whole program", "After compilation"],
+          "correct": "Line by line"
         },
         {
           "id": 6,
-          "type": "quiz",
-          "question": "What symbol is used for comments in Python?",
-          "options": ["#", "//", "<!-- -->"],
-          "correct": "#"
-        },
-        {
-          "id": 7,
-          "type": "info",
-          "title": "Great Job! 🎉",
-          "content": "You've successfully completed this module—way to go! 💪 Every step you take brings you closer to your goals. Now, it’s time to take on a new challenge and continue your journey of growth and discovery. Let’s move ahead to the next exciting learning path! 🚀"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "title": "Variables and Data Types",
-      "lessons": [
-        {
-          "id": 1,
-          "type": "info",
-          "title": "Variables",
-          "content": "Variables are used to store data values. Python variables are created when first assigned."
-        },
-        {
-          "id": 2,
-          "type": "info",
-          "title": "Data Types",
-          "content": "Common Python data types include int, float, str, and bool."
-        },
-        {
-          "id": 3,
-          "type": "quiz",
-          "question": "Which of the following is a valid variable name?",
-          "options": ["2name", "_name", "my-name"],
-          "correct": "_name"
-        },
-        {
-          "id": 4,
           "type": "codeChallenge",
-          "title":"Variable",
-          "question": "Create a variable named 'age' and set it to 25.",
-          "blocks": ["age", "=", "25"],
-          "expectedAnswer": "age = 25"
-        },
-        {
-          "id": 5,
-          "type": "quiz",
-          "question": "Which data type is used for True/False values?",
-          "options": ["int", "str", "bool"],
-          "correct": "bool"
-        },
-        {
-          "id": 6,
-          "type": "info",
-          "title": "Great Job! 🎉",
-          "content": "You've successfully completed this module—way to go! 💪 Every step you take brings you closer to your goals. Now, it’s time to take on a new challenge and continue your journey of growth and discovery. Let’s move ahead to the next exciting learning path! 🚀"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Control Flow",
-      "lessons": [
-        {
-          "id": 1,
-          "type": "info",
-          "title": "if Statements",
-          "content": "Use `if`, `elif`, and `else` to make decisions in Python."
-        },
-        {
-          "id": 2,
-          "type": "info",
-          "title": "Loops",
-          "content": "Python has two main loops: `for` and `while` loops."
-        },
-        {
-          "id": 3,
-          "type": "quiz",
-          "question": "Which keyword is used for a loop that repeats a known number of times?",
-          "options": ["for", "while", "repeat"],
-          "correct": "for"
-        },
-        {
-          "id": 4,
-          "type": "codeChallenge",
-          "question": "Write a loop that prints numbers 0 to 4.",
-          "blocks": ["for i in range(5):", "    print(i)"],
-          "expectedAnswer": "for i in range(5):\n    print(i)"
-        },
-        {
-          "id": 5,
-          "type": "code_fill_in_the_blank",
-          "instruction": "Fill in the blanks to print each item on a new line using the print() function.",
-          "starterCode": "# Print the items on separate lines\nprint(\"Apples\")\n(\"Bananas\")\n(\"Cherries\")",
-          "placeholders": [
-            {"line": 3, "index": 0, "hint": "print"},
-            {"line": 4, "index": 0, "hint": "print"}
-          ],
-          "blocks": ["print", "len", "input", "print"],
-          "correctAnswers": ["print", "print"],
+          "title": "Write a Python program to print a greeting.",
+          "question": "Write code to print 'Hello, Python!' to the console.",
+          "expectedAnswer": "print('Hello, Python!')",
+          "blocks": ["print", "(", "'Hello, Python!'", ")", "'Hello'"],
           "language": "python"
         },
-
-        {
-          "id": 6,
-          "type": "quiz",
-          "question": "What does `elif` stand for?",
-          "options": ["else if", "else then", "end if"],
-          "correct": "else if"
-        },
         {
           "id": 7,
+          "type": "code_fill_in_the_blank",
+          "instruction": "Complete the code to print a message.",
+          "starterCode": "____('Welcome to Python!')\n",
+          "placeholders": [
+            {"line": 1, "index": 0, "hint": "Function to output text"}
+          ],
+          "blocks": ["print", "input", "len", "type"],
+          "correctAnswers": ["print"],
+          "language": "python"
+        },
+        {
+          "id": 8,
           "type": "info",
           "title": "Great Job! 🎉",
-          "content": "You've successfully completed this module—way to go! 💪 Every step you take brings you closer to your goals. Now, it’s time to take on a new challenge and continue your journey of growth and discovery. Let’s move ahead to the next exciting learning path! 🚀"
+          "content": "You've successfully completed this module—way to go! 💪 Every step you take brings you closer to mastering Python. Now, it’s time to take on a new challenge and continue your journey of growth and discovery. Let’s move ahead to the next exciting learning path! 🚀"
         }
       ]
     }
