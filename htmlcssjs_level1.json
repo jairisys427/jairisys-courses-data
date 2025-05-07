@@ -1,225 +1,278 @@
 {
   "level": 1,
-  "language": "html",
+  "language": "htmlcssjs",
   "modules": [
     {
       "id": 1,
-      "title": "HTML Introduction",
+      "title": "Introduction to HTML",
       "lessons": [
         {
           "id": 1,
           "type": "info",
           "title": "What is HTML?",
-          "content": "HTML (HyperText Markup Language) is the standard language used to create web pages."
+          "content": "HTML stands for HyperText Markup Language. It is the standard language for creating webpages and web applications."
         },
         {
           "id": 2,
           "type": "info",
-          "title": "Basic HTML Document",
-          "content": "A basic HTML document starts with <!DOCTYPE html> followed by <html>, <head>, and <body> sections."
+          "title": "HTML Page Structure",
+          "content": "Every HTML document starts with <!DOCTYPE html>, followed by <html>, <head> (with title and meta tags), and <body> for visible content."
         },
         {
           "id": 3,
           "type": "quiz",
-          "question": "Which tag represents the root of an HTML document?",
-          "options": ["<body>", "<html>", "<head>"],
-          "correct": "<html>"
+          "question": "What does HTML stand for?",
+          "options": ["HyperText Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language"],
+          "correct": "HyperText Markup Language"
         },
         {
           "id": 4,
           "type": "codeChallenge",
-          "title": "Basic HTML Skeleton",
-          "question": "Write the minimal valid HTML5 document structure.",
-          "expectedAnswer": "<!DOCTYPE html><html><head><title>My Page</title></head><body></body></html>",
-          "blocks": ["<!DOCTYPE html>", "<html>", "<head>", "<title>", "My Page", "</title>", "</head>", "<body>", "</body>", "</html>"],
+          "title": "Write a basic HTML template.",
+          "question": "Write the skeleton of an HTML document.",
+          "expectedAnswer": "<!DOCTYPE html><html><head><title>Title</title></head><body></body></html>",
+          "blocks": ["<!DOCTYPE html>", "<html>", "<head>", "<title>", "Title", "</title>", "</head>", "<body>", "</body>", "</html>"],
           "language": "html"
         },
         {
           "id": 5,
           "type": "info",
-          "title": "Great Job! 🎉",
-          "content": "You've learned the basics of HTML structure. Let's move to elements and tags!"
+          "title": "Text Elements",
+          "content": "Use tags like <h1> to <h6> for headings, <p> for paragraphs, <strong> for bold, and <em> for italics."
+        },
+        {
+          "id": 6,
+          "type": "code_fill_in_the_blank",
+          "instruction": "Use headings and paragraphs correctly.",
+          "starterCode": "<h1>My Blog</h1>\n<p>Welcome to my blog. I love writing about coding.</p>",
+          "placeholders": [],
+          "blocks": ["<h1>", "<p>", "<em>", "<strong>"],
+          "correctAnswers": [],
+          "language": "html"
+        },
+        {
+          "id": 7,
+          "type": "quiz",
+          "question": "Which tag is used to make text bold?",
+          "options": ["<strong>", "<bold>", "<bld>"],
+          "correct": "<strong>"
+        },
+        {
+          "id": 8,
+          "type": "info",
+          "title": "Great Job!",
+          "content": "You've mastered the basics of HTML structure. Get ready to explore more!"
         }
       ]
     },
     {
       "id": 2,
-      "title": "Text & Formatting Tags",
+      "title": "Links and Images",
       "lessons": [
         {
           "id": 1,
           "type": "info",
-          "title": "Headings & Paragraphs",
-          "content": "HTML uses <h1> to <h6> for headings and <p> for paragraphs."
+          "title": "Creating Links",
+          "content": "Use <a href=\"URL\">text</a> to add links."
         },
         {
           "id": 2,
           "type": "quiz",
-          "question": "Which tag is used for the smallest heading?",
-          "options": ["<h1>", "<h6>", "<head>"],
-          "correct": "<h6>"
+          "question": "Which tag is used to create a hyperlink?",
+          "options": ["<a>", "<link>", "<href>"],
+          "correct": "<a>"
         },
         {
           "id": 3,
           "type": "codeChallenge",
-          "title": "Add Headings and Paragraph",
-          "question": "<h1>Hello</h1><p>Welcome to HTML learning.</p>",
-          "expectedAnswer": "<h1>Hello</h1><p>Welcome to HTML learning.</p>",
-          "blocks": ["<h1>", "Hello", "</h1>", "<p>", "Welcome to HTML learning.", "</p>"],
+          "title": "Create a clickable link.",
+          "question": "<a href=\"https://example.com\">Visit</a>",
+          "expectedAnswer": "<a href=\"https://example.com\">Visit</a>",
+          "blocks": ["<a href=\"https://example.com\">", "Visit", "</a>"],
           "language": "html"
         },
         {
           "id": 4,
           "type": "info",
-          "title": "Bold, Italic, Underline",
-          "content": "Use <b> or <strong> for bold, <i> or <em> for italic, and <u> for underline."
+          "title": "Displaying Images",
+          "content": "Use <img src=\"image.jpg\" alt=\"description\"> to add images."
         },
         {
           "id": 5,
-          "type": "quiz",
-          "question": "Which tag is used for italic text?",
-          "options": ["<em>", "<bold>", "<strong>"],
-          "correct": "<em>"
+          "type": "code_fill_in_the_blank",
+          "instruction": "Insert an image with alternate text.",
+          "starterCode": "<img src=\"cat.jpg\" alt=\"A cute cat\">",
+          "placeholders": [],
+          "blocks": ["<img>", "alt", "src"],
+          "correctAnswers": [],
+          "language": "html"
         },
         {
           "id": 6,
-          "type": "code_fill_in_the_blank",
-          "instruction": "Use formatting tags to style text in a paragraph.",
-          "starterCode": "<p>Learning HTML is fun and ___important___!</p>",
-          "placeholders": [{"line": 0, "index": 29, "hint": "<strong>"}],
-          "blocks": ["<b>", "<em>", "<strong>", "<u>"],
-          "correctAnswers": ["<strong>"],
-          "language": "html"
+          "type": "quiz",
+          "question": "What attribute specifies the image source?",
+          "options": ["src", "href", "link"],
+          "correct": "src"
+        },
+        {
+          "id": 7,
+          "type": "info",
+          "title": "Great Work!",
+          "content": "You can now add links and images to your pages!"
         }
       ]
     },
     {
       "id": 3,
-      "title": "HTML Lists & Links",
+      "title": "Lists and Tables",
       "lessons": [
         {
           "id": 1,
           "type": "info",
-          "title": "Unordered & Ordered Lists",
-          "content": "Use <ul> for unordered and <ol> for ordered lists, with <li> for list items."
+          "title": "Unordered and Ordered Lists",
+          "content": "Use <ul> for unordered lists and <ol> for ordered lists. List items go inside <li> tags."
         },
         {
           "id": 2,
-          "type": "codeChallenge",
-          "title": "Create a List",
-          "question": "<ul><li>Milk</li><li>Bread</li></ul>",
-          "expectedAnswer": "<ul><li>Milk</li><li>Bread</li></ul>",
-          "blocks": ["<ul>", "<li>", "Milk", "</li>", "<li>", "Bread", "</li>", "</ul>"],
-          "language": "html"
+          "type": "quiz",
+          "question": "Which tag creates an ordered list?",
+          "options": ["<ol>", "<ul>", "<li>"],
+          "correct": "<ol>"
         },
         {
           "id": 3,
-          "type": "info",
-          "title": "HTML Links",
-          "content": "Use <a href=\"url\">text</a> to create a hyperlink."
+          "type": "codeChallenge",
+          "title": "Create an unordered list with 3 items.",
+          "question": "<ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>",
+          "expectedAnswer": "<ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>",
+          "blocks": ["<ul>", "<li>", "HTML", "</li>", "<li>", "CSS", "</li>", "<li>", "JavaScript", "</li>", "</ul>"],
+          "language": "html"
         },
         {
           "id": 4,
+          "type": "info",
+          "title": "HTML Tables",
+          "content": "Use <table>, <tr>, <th>, and <td> to create tables."
+        },
+        {
+          "id": 5,
+          "type": "code_fill_in_the_blank",
+          "instruction": "Build a table with two rows and two columns.",
+          "starterCode": "<table>\n  <tr><th>Name</th><th>Age</th></tr>\n  <tr><td>Ali</td><td>20</td></tr>\n</table>",
+          "placeholders": [],
+          "blocks": ["<table>", "<tr>", "<th>", "<td>", "</td>", "</tr>", "</table>"],
+          "correctAnswers": [],
+          "language": "html"
+        },
+        {
+          "id": 6,
           "type": "quiz",
-          "question": "What attribute is used to specify the URL in a link?",
-          "options": ["src", "href", "link"],
-          "correct": "href"
+          "question": "Which tag defines a table row?",
+          "options": ["<tr>", "<td>", "<th>"],
+          "correct": "<tr>"
+        },
+        {
+          "id": 7,
+          "type": "info",
+          "title": "Excellent!",
+          "content": "You’ve learned to organize data using lists and tables!"
         }
       ]
     },
     {
       "id": 4,
-      "title": "HTML Media",
+      "title": "Forms and Input",
       "lessons": [
         {
           "id": 1,
           "type": "info",
-          "title": "Images",
-          "content": "Use <img src=\"url\" alt=\"text\"> to embed images."
+          "title": "Forms Overview",
+          "content": "Forms collect user input. Use <form>, <input>, <label>, <textarea>, <select> and <button>."
         },
         {
           "id": 2,
           "type": "quiz",
-          "question": "Which attribute provides alternative text for an image?",
-          "options": ["src", "alt", "title"],
-          "correct": "alt"
+          "question": "Which tag is used to create a form?",
+          "options": ["<form>", "<input>", "<submit>"],
+          "correct": "<form>"
         },
         {
           "id": 3,
-          "type": "info",
-          "title": "Video and Audio",
-          "content": "Use <video> and <audio> tags to embed media, with 'controls' for playback."
+          "type": "codeChallenge",
+          "title": "Create a simple form with name input.",
+          "question": "<form><label>Name:</label><input type=\"text\"></form>",
+          "expectedAnswer": "<form><label>Name:</label><input type=\"text\"></form>",
+          "blocks": ["<form>", "<label>", "Name:", "</label>", "<input type=\"text\">", "</form>"],
+          "language": "html"
         },
         {
           "id": 4,
-          "type": "codeChallenge",
-          "title": "Add an Image",
-          "question": "<img src=\"cat.jpg\" alt=\"A cute cat\">",
-          "expectedAnswer": "<img src=\"cat.jpg\" alt=\"A cute cat\">",
-          "blocks": ["<img", "src=\"cat.jpg\"", "alt=\"A cute cat\"", ">"],
+          "type": "info",
+          "title": "Input Types",
+          "content": "Common types include text, password, email, radio, checkbox, submit."
+        },
+        {
+          "id": 5,
+          "type": "code_fill_in_the_blank",
+          "instruction": "Build a login form with email and password.",
+          "starterCode": "<form>\n<input type=\"email\">\n<input type=\"password\">\n<button>Login</button>\n</form>",
+          "placeholders": [],
+          "blocks": ["<form>", "<input>", "<button>", "type", "</form>"],
+          "correctAnswers": [],
           "language": "html"
+        },
+        {
+          "id": 6,
+          "type": "info",
+          "title": "Great Job!",
+          "content": "You’ve created interactive forms. Let’s move to advanced topics next!"
         }
       ]
     },
     {
       "id": 5,
-      "title": "Forms & Input",
-      "lessons": [
-        {
-          "id": 1,
-          "type": "info",
-          "title": "Forms in HTML",
-          "content": "Forms use <form>, <input>, <label>, <textarea>, <button>, and <select> to collect data."
-        },
-        {
-          "id": 2,
-          "type": "codeChallenge",
-          "title": "Simple Form",
-          "question": "<form><input type=\"text\"><button>Submit</button></form>",
-          "expectedAnswer": "<form><input type=\"text\"><button>Submit</button></form>",
-          "blocks": ["<form>", "<input", "type=\"text\"", ">", "<button>", "Submit", "</button>", "</form>"],
-          "language": "html"
-        },
-        {
-          "id": 3,
-          "type": "quiz",
-          "question": "Which input type is used for emails?",
-          "options": ["text", "email", "number"],
-          "correct": "email"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "title": "Semantic HTML",
+      "title": "Semantic and Multimedia",
       "lessons": [
         {
           "id": 1,
           "type": "info",
           "title": "Semantic Tags",
-          "content": "Semantic HTML includes tags like <header>, <footer>, <article>, <nav>, and <section> to improve structure and accessibility."
+          "content": "Use tags like <header>, <nav>, <main>, <article>, <section>, <footer> for better HTML structure and accessibility."
         },
         {
           "id": 2,
           "type": "quiz",
-          "question": "Which tag defines navigation links?",
-          "options": ["<header>", "<nav>", "<footer>"],
+          "question": "Which tag defines a site navigation section?",
+          "options": ["<nav>", "<aside>", "<menu>"],
           "correct": "<nav>"
         },
         {
           "id": 3,
           "type": "codeChallenge",
-          "title": "Use Semantic Tags",
-          "question": "<header><h1>Title</h1></header>",
-          "expectedAnswer": "<header><h1>Title</h1></header>",
-          "blocks": ["<header>", "<h1>", "Title", "</h1>", "</header>"],
+          "title": "Structure a page using semantic tags.",
+          "question": "<header><h1>Site</h1></header><main><p>Content</p></main><footer>©</footer>",
+          "expectedAnswer": "<header><h1>Site</h1></header><main><p>Content</p></main><footer>©</footer>",
+          "blocks": ["<header>", "<h1>", "Site", "</h1>", "</header>", "<main>", "<p>", "Content", "</p>", "</main>", "<footer>", "©", "</footer>"],
           "language": "html"
         },
         {
           "id": 4,
           "type": "info",
-          "title": "Congrats! 🎉",
-          "content": "You've completed Level 1 of HTML learning. You're now ready for more advanced HTML and CSS topics!"
+          "title": "Audio and Video",
+          "content": "Use <audio> and <video> tags to embed media."
+        },
+        {
+          "id": 5,
+          "type": "quiz",
+          "question": "Which tag is used to add sound?",
+          "options": ["<audio>", "<sound>", "<media>"],
+          "correct": "<audio>"
+        },
+        {
+          "id": 6,
+          "type": "info",
+          "title": "Congratulations! 🎉",
+          "content": "You’ve completed HTML Level 1! You now have a solid foundation to build real websites. 🚀"
         }
       ]
     }
