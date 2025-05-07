@@ -214,15 +214,26 @@
         {
           "id": 5,
           "type": "code_fill_in_the_blank",
-          "instruction": "Build a login form with email and password.",
-          "starterCode": "<form>\n<input type=\"email\">\n<input type=\"password\">\n<button>Login</button>\n</form>",
-          "placeholders": [],
-          "blocks": ["<form>", "<input>", "<button>", "type", "</form>"],
-          "correctAnswers": [],
+          "instruction": "Complete the login form by adding input and button tags.",
+          "starterCode": "<form>\n  <label>Email:</label>____\n  <label>Password:</label>____\n  ____\n</form>",
+          "placeholders": [
+            {"line": 2, "index": 22, "hint": "Input for email"},
+            {"line": 3, "index": 25, "hint": "Input for password"},
+            {"line": 4, "index": 2, "hint": "Button to submit"}
+          ],
+          "blocks": ["<input type=\"email\">", "<input type=\"password\">", "<button>Login</button>", "<form>", "</form>"],
+          "correctAnswers": ["<input type=\"email\">", "<input type=\"password\">", "<button>Login</button>"],
           "language": "html"
         },
         {
           "id": 6,
+          "type": "quiz",
+          "question": "Which input type is used for multiple-choice options?",
+          "options": ["radio", "text", "submit"],
+          "correct": "radio"
+        },
+        {
+          "id": 7,
           "type": "info",
           "title": "Great Job!",
           "content": "You’ve created interactive forms. Let’s move to advanced topics next!"
@@ -263,13 +274,27 @@
         },
         {
           "id": 5,
+          "type": "code_fill_in_the_blank",
+          "instruction": "Add semantic tags to structure a webpage.",
+          "starterCode": "____\n  <h1>Welcome</h1>\n____\n  <p>This is my site.</p>\n____\n  <p>© 2025</p>\n____",
+          "placeholders": [
+            {"line": 1, "index": 0, "hint": "Header tag"},
+            {"line": 3, "index": 0, "hint": "Main content tag"},
+            {"line": 5, "index": 0, "hint": "Footer tag"}
+          ],
+          "blocks": ["<header>", "<main>", "<footer>", "<section>", "</header>", "</main>", "</footer>"],
+          "correctAnswers": ["<header>", "<main>", "<footer>"],
+          "language": "html"
+        },
+        {
+          "id": 6,
           "type": "quiz",
           "question": "Which tag is used to add sound?",
           "options": ["<audio>", "<sound>", "<media>"],
           "correct": "<audio>"
         },
         {
-          "id": 6,
+          "id": 7,
           "type": "info",
           "title": "Congratulations! 🎉",
           "content": "You’ve completed HTML Level 1! You now have a solid foundation to build real websites. 🚀"
